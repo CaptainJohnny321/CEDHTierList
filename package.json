@@ -45,9 +45,14 @@
 		"lint:fix": "eslint --fix .",
 		"prepublishOnly": "tsup",
 		"test": "bun test",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --noEmit",
+		"start": "node server.js"
 	},
 	"dependencies": {
+		"express": "^4.18.2",
+		"cors": "^2.8.5",
+		"node-fetch": "^2.6.7",
+		"dotenv": "^16.4.5",
 		"zod": "^4.0.2",
 		"zod-fetch": "^0.1.1"
 	},
@@ -59,5 +64,9 @@
 		"eslint": "9.39.1",
 		"tsup": "8.5.1",
 		"typescript": "5.9.3"
-	}
+	},
+	"directories": {
+		"test": "test"
+	},
+	"author": ""
 }
